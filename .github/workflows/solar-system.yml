@@ -29,7 +29,7 @@ jobs:
           mocha app-test.js --timeout 10000 --reporter mocha-junit-reporter --reporter-options mochaFile=test-results/test-result.xml --exit
 
       - name: Upload test results as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: test-results/test-result.xml
